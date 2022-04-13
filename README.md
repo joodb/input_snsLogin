@@ -1,2 +1,3 @@
-# login_modal_2
-login modal+ JS
+# input_snsLogin 
+login modal + JS
+
