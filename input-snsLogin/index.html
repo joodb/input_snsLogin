@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login_modal</title>
+    <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="input_snsLogin.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <article class="cont-login" id="cont-login">
+        <div class="cont-head">
+            <h2 class="tit-head">로그인 또는 회원가입</h2>
+            <img class="close-head" src="./images/close.png" alt="close" onclick="closeBtn();">
+        </div>
+
+        <div class="cont-input">
+            <p class="info-input">위니브에서 여러분의 궁금증을 해결하세요! :)</p>
+            <form action="#none" method="post" onsubmit="loginValidate();">
+                <input class="inputId-input" type="text" name="memberId" id="memberId" maxlength='15' placeholder="아이디">
+                <p id="checkId"></p>
+                <input class="inputPw-input" type="password"  name="memberPw" id="memberPw" maxlength='15' placeholder="비밀번호">
+                <p id="checkMember"></p>
+                <div class="status-input">
+                    <img id="img-status" src="./images/icon_check_empty.png" alt="" onclick="checkIcon()"> 
+                    로그인 상태 유지
+                </div>
+                <button class="btn-input">로그인</button>
+            </form>
+            <div class="cont-find">
+                <a class="signup-find" href="#none">회원가입</a>
+                <a href="#none">아이디/비밀번호 찾기</a>
+            </div>
+        </div>
+
+        <div class="cont-snsLogin">
+            <div class="tit-snsLogin">또는</div>
+                
+            <a class="google-snsLogin" href="https://www.google.com/">
+                구글 계정으로 로그인
+            </a>
+            <a class="fbook-snsLogin" href="https://ko-kr.facebook.com/">
+                페이스북 계정으로 로그인
+            </a>
+            <a class="naver-snsLogin" href="https://www.naver.com/">
+                네이버 계정으로 로그인
+            </a>
+            <a class="kakao-snsLogin" href="https://www.kakaocorp.com/page/service/service/KakaoTalk?lang=ko">
+                카카오톡 계정으로 로그인
+            </a>
+        </div>
+    </article>
+    <script src="input_snsLogin.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+* {
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+button{
+	all: unset; 
+}
+
+:root {
+    --border-color : #C4C4C4;
+    --text-color : #767676;
+}
+
+.cont-login {
+    width: 520px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+}
+
+.cont-head {
+    text-align: center;
+    padding: 19px 23px 17px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.cont-head .tit-head {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cont-head .close-head {
+    float: right; 
+    width: 16px;
+}
+
+.cont-head .close-head:hover {
+    cursor: pointer;
+}
+
+/* input 로그인 영역 */
+.cont-input {
+    padding: 26px 23px 30px;
+}
+
+.cont-input .info-input {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 26px 0;
+}
+
+.cont-input .inputId-input,  .cont-input .inputPw-input {
+    display: block;
+    width: 472px;
+    height: 50px;
+    outline: none;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 15px 16px;
+}    
+
+.cont-input .inputId-input {
+    margin-bottom: 10px;
+} 
+
+.cont-input .inputPw-input {
+    margin-bottom: 16px;
+} 
+
+.cont-input .inputId-input::placeholder, .cont-input .inputPw-input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.cont-input.img-status:hover, .cont-input.btn-input:hover {
+    cursor: pointer;
+}
+
+/* <a> common  */
+.cont-input a, .cont-find a , .cont-snsLogin a{
+    text-decoration: none;
+}
+
+.cont-input .status-input {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.cont-input .status-input img {
+    width: 22px;
+    margin-right: 8px;
+} 
+
+.cont-input .status-input img:hover {
+    cursor: pointer;
+}
+
+.cont-input .btn-input {
+    padding: 14px 211px;
+    background: #2F80ED;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+
+    outline: none;
+}
+
+.cont-find {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.cont-find a{
+    color: var(--text-color);
+
+}
+
+.cont-find a:hover{
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.cont-find .signup-find::after {
+    content: '';
+    float: right;
+    display: block;
+    width: 1px;
+    height: 14px;
+    background-color: var(--text-color);
+    margin: 2px 12px;
+}
+
+.cont-snsLogin {
+    text-align: center;
+    padding: 0 23px 24px;
+    color: var(--text-color);
+}
+
+.cont-snsLogin .tit-snsLogin {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cont-snsLogin .tit-snsLogin::before, .cont-snsLogin .tit-snsLogin::after {
+    content: "";
+    display: block;
+	background-color: rgba(0, 0, 0, 0.35);
+	height: 1px;
+    flex-grow: 1;
+}
+
+.cont-snsLogin .tit-snsLogin::before {
+    margin: 0 10px 0 0 ;
+}
+
+.cont-snsLogin .tit-snsLogin::after {
+    margin: 0 0 0 10px;
+}
+
+/* snsLogin btn area */
+.cont-snsLogin > a:nth-child(n+1){
+    position: relative;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--text-color);
+    padding: 14px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 5px; 
+} 
+
+.cont-snsLogin > a:hover{
+    text-decoration: underline;
+    text-underline-position: under;
+} 
+
+
+.cont-snsLogin .google-snsLogin {
+    border: 1px solid #767676;
+} 
+
+.cont-snsLogin .fbook-snsLogin {
+    border: 1px solid #2D9CDB;
+} 
+
+.cont-snsLogin .naver-snsLogin {
+    border: 1px solid #00BF18;
+} 
+
+.cont-snsLogin .kakao-snsLogin {
+    border: 1px solid #F2C94C;;
+    margin-bottom: 0;
+}
+
+.cont-snsLogin a::before {
+    position : absolute;
+    width: 28px;
+    top: 10px;
+    left: 11px;
+}
+.cont-snsLogin .google-snsLogin::before {
+    content: url(images/Google__G__Logo\ 1\ .png);
+}
+.cont-snsLogin .fbook-snsLogin::before {
+    content: url(images/facebook\ \(1\).png);
+}
+
+.cont-snsLogin .naver-snsLogin::before {
+    content: url(images/naver-logo.png);
+}
+.cont-snsLogin .kakao-snsLogin::before {
+    content: url(images/message-circle.png);
+}
+
+
+
+
+
+
+/* js용 클래스 */
+.cont-input .input-validate {
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #F4492E;
+}
