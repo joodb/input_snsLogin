@@ -6,7 +6,7 @@ function closeBtn(){
 
 /* 아이디 확인 */
 /* 수정 필요 */
-function loginValidate(){
+/* function loginValidate(){
     const memberId = document.querySelector("#memberId");
     const memberPw = document.querySelector("#memberPw");
     const checkId = document.querySelector("#checkId");
@@ -23,7 +23,7 @@ function loginValidate(){
         checkId.innerText = "아이디 혹은 비밀번호과 일치하지 않습니다.";
 
     }
-};
+}; */
 
 
 /* img-status 이미지 변경 */
