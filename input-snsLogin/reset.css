@@ -1,3 +1,7 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 /* reset.css */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -19,36 +23,41 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
-ol, ul {
+
+
+ol,
+ul {
     list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
     quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-body{
-    font-family:'회사에서 사용하는 기본 폰트', '맑은 고딕','Malgun Gothic', AppleGothic,sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    /* 아이폰에 reset font가 설정이 안되는 경우기 있어 설정해주어야 함  */
-    -webkit-text-size-adjust:none;
-}
+
 p,div,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,select,button,code,label,em,span,strong {
     /* 단어 단위로 떨어져 내리게끔 */
     word-break:keep-all;
@@ -69,14 +78,23 @@ input,select,textarea{
 }
 /* IE 셀렉박스 기본 화살표 제거 */
 select::-ms-expand{display:none;}
-/* 프로젝트마다 매우 상이하기 때문에 참고만 해주세요. */
+/* 프로젝트마다 매우 상이하기 때문에 추후 변경 가능. */
+
 a {
-    display: block;
+    text-decoration: none;
+    color: #000;
 }
-table, th, tr, td {
-    display: block;
+
+.txt-hide {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
 }
+
 img {
-    display: block;
     width: 100%;
+    vertical-align: top;
 }

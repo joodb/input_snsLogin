@@ -182,22 +182,23 @@ button{
 /* snsLogin btn area */
 .cont-snsLogin > a:nth-child(n+1){
     position: relative;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
     color: var(--text-color);
-    padding: 14px;
     margin-bottom: 10px;
     box-sizing: border-box;
     border-radius: 5px; 
+
+    display: block;
+    padding: 15px 14px;
+    text-align: center;
 } 
 
 .cont-snsLogin > a:hover{
     text-decoration: underline;
     text-underline-position: under;
 } 
-
 
 .cont-snsLogin .google-snsLogin {
     border: 1px solid #767676;
@@ -212,17 +213,43 @@ button{
 } 
 
 .cont-snsLogin .kakao-snsLogin {
-    border: 1px solid #F2C94C;;
+    border: 1px solid #F2C94C;
     margin-bottom: 0;
 }
 
-.cont-snsLogin a::before {
+/* .cont-snsLogin a::before {
     position : absolute;
     width: 28px;
     top: 10px;
     left: 11px;
+
+} */
+
+/* image-sprite */
+[class^="icon"]::before {
+    float: left;
+    display: block;
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-image: url(images/css_sprites.png);
 }
+
 .cont-snsLogin .google-snsLogin::before {
+    background-position: -52px -10px;
+}
+.cont-snsLogin .fbook-snsLogin::before {
+    background-position: -90px -10px;
+}
+.cont-snsLogin .naver-snsLogin::before {
+    background-position: -10px -52px;
+}
+.cont-snsLogin .kakao-snsLogin::before {
+    background-position: -10px -10px;
+}
+
+/* 기존 background-image  */
+/* .cont-snsLogin .google-snsLogin::before {
     content: url(images/Google__G__Logo\ 1\ .png);
 }
 .cont-snsLogin .fbook-snsLogin::before {
@@ -235,8 +262,7 @@ button{
 .cont-snsLogin .kakao-snsLogin::before {
     content: url(images/message-circle.png);
 }
-
-
+ */
 
 
 
